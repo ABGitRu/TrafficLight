@@ -7,6 +7,13 @@
 
 import UIKit
 
+enum trafficLights {
+    case off
+    case green
+    case yellow
+    case red
+}
+
 class ViewController: UIViewController {
 
     @IBOutlet weak var greenLightView: UIView!
@@ -14,14 +21,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var redLightView: UIView!
     
     @IBOutlet weak var trafficLightButton: UIButton!
-    
-    enum trafficLights {
-        case off
-        case green
-        case yellow
-        case red
-    }
-    
+        
     var trafficLightWorks = trafficLights.off
     
     override func viewDidLoad() {
